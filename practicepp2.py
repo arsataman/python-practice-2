@@ -25,32 +25,25 @@ if hour >= 6 and hour < 12:
     discounted = total - discount
     tip = discounted * 0.10
     final_total = discounted + tip
-    print("Time period :", type)
-    print("Discount :", discount, "KZT")
-    print("Tip (10%) :", tip, "KZT")
-    print("Total :", final_total, "KZT")
 elif hour >= 12 and hour < 17:
     type = "No discount"
     discount = 0.0
     discounted = total - discount
     tip = discounted * 0.10
     final_total = discounted + tip
-    print("Time period :", type)
-    print("Discount :", discount, "KZT")
-    print("Tip (10%) :", tip, "KZT")
-    print("Total :", final_total, "KZT")
 elif hour >= 17 and hour < 22:
     type = "Evening discount"
     discount = total * 0.05
     discounted = total - discount
     tip = discounted * 0.10
     final_total = discounted + tip
-    print("Time period :", type)
-    print("Discount :", discount, "KZT")
-    print("Tip (10%) :", tip, "KZT")
-    print("Total :", final_total, "KZT")
 else:
     print("Closed")
+
+print("Time period :", type)
+print("Discount :", discount, "KZT")
+print("Tip (10%) :", tip, "KZT")
+print("Total :", final_total, "KZT")
 
 print("-" * 30)
 
